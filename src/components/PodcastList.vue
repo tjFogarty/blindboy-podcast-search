@@ -102,12 +102,23 @@ export default {
 
 <style>
   .podcast-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(250px, auto));
-    grid-gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+  
+  @media (min-width: 800px) {
+    .podcast-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(250px, auto));
+      grid-gap: 20px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .podcast-list {
+      grid-template-columns: repeat(3, minmax(250px, auto));
+    }
   }
   
   .podcast-search {
