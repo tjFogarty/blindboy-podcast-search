@@ -4,7 +4,7 @@
     
     <div class="podcast-search">
       <label for="search" class="podcast-search-label">Search:</label>
-      <input autofocus class="podcast-search-input" v-model="query" id="search" />
+      <input autofocus autocomplete="off" class="podcast-search-input" v-model="query" id="search" />
     </div>
     
     <ul v-if="filteredPodcasts.length" class="podcast-list">
